@@ -1,10 +1,4 @@
 title: "Anjaneya Sahu"
 description: "Platform Engineer → GenAI & Agentic AI Engineer"
 url: "https://anjaneya-github.github.io"
-
-theme: jekyll-theme-minimal
-
-author:
-  name: "Anjaneya Sahu"
-
-show_downloads: false
+markdown: kramdown
