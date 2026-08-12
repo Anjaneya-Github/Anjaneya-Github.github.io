@@ -1,9 +1,12 @@
-# Anjaneya Sahu — AI Engineering Portfolio
+# Anjaneya Sahu — GitHub Pages Portfolio
 
-Custom Jekyll/GitHub Pages portfolio for https://anjaneya-github.github.io/
+Jekyll portfolio for https://anjaneya-github.github.io/
 
-Branch: `main`
+## Main branch
 
-Sections: Hero, About, Capabilities, Projects, Skills, AI Knowledge Hub, Contact.
+This package is designed for the `main` branch.
 
-The hero uses a pure-CSS futuristic AI robot, so no external image is required.
+## Important
+
+The portfolio uses `assets/css/style.css` explicitly from `_layouts/default.html`.
+There is no Jekyll theme dependency in `_config.yml`, so the Minimal theme cannot override the custom design.
