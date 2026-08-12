@@ -1,9 +1,10 @@
+title: "Anjaneya Sahu"
+description: "Platform Engineer → GenAI & Agentic AI Engineer"
+url: "https://anjaneya-github.github.io"
+
 theme: jekyll-theme-minimal
 
-title: Anjaneya Sahu
+author:
+  name: "Anjaneya Sahu"
 
-description: >
-  Platform Engineer → GenAI Engineer | Agentic AI | RAG |
-  LangGraph | MCP | AI Platforms
-
-logo: /assets/profile.jpg
+show_downloads: false
