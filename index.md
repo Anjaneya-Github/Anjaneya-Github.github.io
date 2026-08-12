@@ -6,7 +6,7 @@ title: "Anjaneya Sahu | GenAI & Agentic AI Engineer"
 <section class="hero" id="home">
   <div class="container hero-grid">
     <div class="hero-copy">
-      <div class="availability"><span></span> Available for GenAI / AI Platform opportunities</div>
+      <div class="availability"><span></span>Building Agentic AI Systems · Researching Multi-Agent Intelligence</div>
       <p class="eyebrow hero-eyebrow">ANJANEYA SAHU</p>
       <h1>Platform Engineer <span>→ GenAI &amp; Agentic AI Engineer</span></h1>
       <p class="hero-description">I build production-grade AI systems combining LLMs, RAG, multi-agent orchestration and enterprise platform engineering to automate complex business workflows.</p>
