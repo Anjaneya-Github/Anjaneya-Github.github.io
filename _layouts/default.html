@@ -1,78 +1,30 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-
-<meta charset="UTF-8">
-
-<meta name="viewport"
-      content="width=device-width, initial-scale=1.0">
-
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{{ page.title | default: site.title }}</title>
-
-<meta name="description"
-      content="{{ site.description }}">
-
-<link rel="stylesheet"
-      href="{{ '/assets/css/style.css' | relative_url }}">
-
+<meta name="description" content="{{ site.description }}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#050b16;--surface:#0b1829;--text:#f5f7fb;--muted:#8f9db0;--cyan:#12d8ee;--purple:#b978ff;--border:rgba(255,255,255,.09)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,Arial,sans-serif;line-height:1.6}a{color:inherit;text-decoration:none}.container{width:min(1180px,calc(100% - 48px));margin:auto}.narrow{width:min(900px,calc(100% - 48px));}.navbar{position:fixed;z-index:20;top:0;left:0;right:0;height:68px;background:rgba(5,11,22,.82);border-bottom:1px solid rgba(255,255,255,.06);backdrop-filter:blur(18px)}.nav{height:100%;display:flex;align-items:center;justify-content:space-between;gap:20px}.logo{font-weight:700}.navlinks{display:flex;gap:25px;color:#8d9aae;font-size:13px}.navlinks a:hover{color:#fff}.connect{padding:9px 14px;border-radius:8px;color:#06101e;background:linear-gradient(100deg,var(--cyan),var(--purple));font-size:12px;font-weight:800}.hero{min-height:720px;padding-top:68px;display:flex;align-items:center;position:relative;overflow:hidden;background:radial-gradient(circle at 72% 38%,rgba(74,112,161,.22),transparent 30%),linear-gradient(110deg,#071526,#081322 50%,#090f18)}.hero:before{content:"";position:absolute;inset:0;opacity:.13;background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);background-size:60px 60px}.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:40px;position:relative;z-index:1}.availability{display:inline-flex;align-items:center;gap:8px;padding:6px 11px;border-radius:999px;color:var(--cyan);background:rgba(18,216,238,.06);border:1px solid rgba(18,216,238,.25);font-size:11px;font-weight:700}.availability span{width:6px;height:6px;border-radius:50%;background:var(--cyan);box-shadow:0 0 14px var(--cyan)}.eyebrow{color:var(--cyan);font-size:10px;font-weight:800;letter-spacing:.22em;text-transform:uppercase}.hero .eyebrow{margin-top:28px}.hero h1{margin:12px 0 25px;font-family:"Space Grotesk",Inter,sans-serif;font-size:clamp(48px,6vw,76px);line-height:1;letter-spacing:-.055em}.hero h1 span{display:block;background:linear-gradient(100deg,var(--cyan),#619fff,var(--purple));-webkit-background-clip:text;background-clip:text;color:transparent}.hero-description{max-width:650px;color:#98a6b8;font-size:16px;line-height:1.8}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:25px}.btn{display:inline-flex;align-items:center;padding:12px 18px;border-radius:8px;font-size:13px;font-weight:700}.primary{color:#06101e;background:linear-gradient(100deg,var(--cyan),var(--purple))}.secondary{color:#e8edf4;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.03)}.meta{margin-top:28px;color:#718095;font-size:11px}.meta b{color:var(--cyan);margin:0 5px}.profile-wrap{display:flex;justify-content:center}.profile-card{width:330px;height:410px;position:relative;overflow:hidden;border-radius:24px;border:1px solid rgba(255,255,255,.13);background:linear-gradient(145deg,#172f49,#0a1423);box-shadow:0 35px 90px rgba(0,0,0,.5),0 0 80px rgba(18,216,238,.08)}.profile-art{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:7px;color:var(--cyan);background:radial-gradient(circle at 50% 35%,rgba(18,216,238,.13),transparent 35%);font-size:11px;letter-spacing:.2em;text-align:center}.ai-symbol{font-size:78px;text-shadow:0 0 35px rgba(18,216,238,.4)}.specialty{position:absolute;left:-10px;bottom:18px;padding:11px 15px;border-radius:12px;background:rgba(5,11,22,.92);border:1px solid rgba(255,255,255,.1)}.specialty small{display:block;color:#7f8ea2;font-size:10px}.specialty strong{font-size:12px}.section{padding:110px 0}.alt{background:#070f1c;border-top:1px solid rgba(255,255,255,.03);border-bottom:1px solid rgba(255,255,255,.03)}.section h2{margin:12px 0 20px;font-family:"Space Grotesk",Inter,sans-serif;font-size:clamp(34px,4vw,52px);line-height:1.08;letter-spacing:-.045em}.section h2 span{background:linear-gradient(90deg,var(--cyan),var(--purple));-webkit-background-clip:text;background-clip:text;color:transparent}.muted,.project p,.cards p,.contact p,.timeline p{color:var(--muted)}.cards,.projects{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.cards article,.project{padding:25px;border:1px solid var(--border);border-radius:16px;background:linear-gradient(145deg,rgba(15,31,52,.75),rgba(7,15,27,.85))}.cards article{min-height:190px}.icon{width:40px;height:40px;display:grid;place-items:center;border-radius:10px;color:var(--cyan);background:rgba(18,216,238,.08);border:1px solid rgba(18,216,238,.15)}.cards h3,.project h3{margin:18px 0 8px}.cards p,.project p{font-size:13px;line-height:1.7}.projects{grid-template-columns:repeat(2,1fr)}.project{min-height:310px}.project small{color:var(--cyan);font-weight:800;letter-spacing:.15em}.project h3{font-family:"Space Grotesk";font-size:26px}.impact{display:block;margin:20px 0;color:#e8edf4;font-size:12px}.tags,.skill-cloud{display:flex;flex-wrap:wrap;gap:7px}.tags span,.skill-cloud span{padding:6px 9px;border-radius:999px;color:#91a0b4;background:rgba(255,255,255,.025);border:1px solid var(--border);font-size:10px}.skill-cloud{padding:25px;border:1px solid var(--border);border-radius:16px;background:rgba(10,23,40,.65)}.skill-cloud span{font-size:12px}.timeline{max-width:900px;border-left:1px solid rgba(18,216,238,.25);padding-left:30px}.timeline>div{position:relative;padding:18px 0}.timeline>div:before{content:"";position:absolute;left:-36px;top:25px;width:10px;height:10px;border-radius:50%;background:var(--bg);border:2px solid var(--cyan)}.timeline b{color:var(--cyan);font-size:11px}.timeline h3{margin:4px 0;font-size:17px}.flow{display:flex;flex-wrap:wrap;align-items:center;gap:10px;padding:25px;border:1px solid var(--border);border-radius:16px;background:rgba(10,23,40,.65)}.flow span{padding:10px 13px;border-radius:9px;color:#c4cedc;background:rgba(18,216,238,.05);border:1px solid rgba(18,216,238,.1)}.flow i{color:#3c5a75}.contact{padding:45px;border:1px solid rgba(18,216,238,.16);border-radius:22px;background:radial-gradient(circle at 75% 20%,rgba(185,120,255,.12),transparent 35%),#0b1829}.footer{padding:25px 0;border-top:1px solid rgba(255,255,255,.05);color:#556276;font-size:10px}.footer-inner{display:flex;justify-content:space-between}.muted{line-height:1.8}@media(max-width:900px){.navlinks{display:none}.hero-grid{grid-template-columns:1fr}.profile-wrap{padding-top:50px}.cards{grid-template-columns:repeat(2,1fr)}}@media(max-width:650px){.container,.narrow{width:calc(100% - 30px)}.hero{padding-top:120px;padding-bottom:80px}.hero h1{font-size:47px}.cards,.projects{grid-template-columns:1fr}.profile-card{width:290px;height:360px}.footer-inner{flex-direction:column;gap:8px}}
+</style>
 </head>
-
-
 <body>
-
 <header class="navbar">
-
-<div class="nav-container">
-
-<a href="#home" class="logo">
-✦ Anjaneya Sahu
-</a>
-
-<nav>
-
-<a href="#about">About</a>
-<a href="#projects">Projects</a>
-<a href="#skills">Skills</a>
-<a href="#experience">Experience</a>
-<a href="#research">Research</a>
-<a href="#contact">Contact</a>
-
-</nav>
-
-<a href="#contact" class="hire">
-Let's connect
-</a>
-
-</div>
-
+  <div class="container nav">
+    <a class="logo" href="#home">✦ Anjaneya Sahu</a>
+    <nav class="navlinks">
+      <a href="#about">About</a><a href="#projects">Projects</a><a href="#skills">Skills</a>
+      <a href="#experience">Experience</a><a href="#research">Research</a><a href="#contact">Contact</a>
+    </nav>
+    <a class="connect" href="#contact">Let's connect</a>
+  </div>
 </header>
-
-
-<main>
-
-{{ content }}
-
-</main>
-
-
-<footer>
-
-<div class="footer-container">
-
-<span>
-© {{ site.time | date: "%Y" }} Anjaneya Sahu
-</span>
-
-<span>
-Platform Engineering • GenAI • Agentic AI
-</span>
-
-</div>
-
-</footer>
-
-
+<main>{{ content }}</main>
+<footer class="footer"><div class="container footer-inner"><span>© {{ site.time | date: "%Y" }} Anjaneya Sahu</span><span>Platform Engineering • GenAI • Agentic AI</span></div></footer>
 </body>
-
 </html>
