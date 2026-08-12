@@ -1,0 +1,26 @@
+:root {
+    --background: #050b16;
+    --surface: #0b1627;
+    --surface-light: #102038;
+
+    --text: #f5f7fb;
+    --muted: #8f9caf;
+
+    --cyan: #12d8ee;
+    --blue: #619fff;
+    --purple: #b977ff;
+
+    --border: rgba(255,255,255,.10);
+}
+.hero-title span {
+    background:
+        linear-gradient(
+            90deg,
+            #12d8ee,
+            #619fff,
+            #b977ff
+        );
+
+    -webkit-background-clip: text;
+    color: transparent;
+}
