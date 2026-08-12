@@ -19,24 +19,13 @@ title: "Anjaneya Sahu | GenAI & Agentic AI Engineer"
 
     <div class="profile-wrap">
       <div class="profile-card">
-  <div class="robot-scene">
-    <div class="robot-halo"></div>
-    <div class="robot">
-      <div class="robot-head">
-        <div class="robot-ear left"></div><div class="robot-ear right"></div>
-        <div class="robot-face">
-          <div class="robot-eye left-eye"></div><div class="robot-eye right-eye"></div>
-          <div class="robot-mouth"></div>
-        </div>
-      </div>
-      <div class="robot-neck"></div>
-      <div class="robot-body">
-        <div class="robot-core">AI</div>
-        <div class="shoulder left"></div><div class="shoulder right"></div>
-      </div>
-    </div>
-    <div class="robot-label">AI<br><small>INTELLIGENCE</small><br><small>INNOVATION</small></div>
-    <div class="specialty"><small>Specialty</small><strong>Agentic AI · RAG · LLMOps</strong></div>
+  <img
+    src="{{ '/assets/images/ai-robot.png' | relative_url }}"
+    alt="Futuristic AI robot"
+    class="profile-photo">
+  <div class="specialty">
+    <small>Specialty</small>
+    <strong>Agentic AI · RAG · LLMOps</strong>
   </div>
 </div>
     </div>
@@ -103,6 +92,6 @@ title: "Anjaneya Sahu | GenAI & Agentic AI Engineer"
     <p class="eyebrow">LET'S BUILD</p>
     <h2>Production AI, not just prototypes.</h2>
     <p>Open to conversations around GenAI, Agentic AI, AI platform engineering and enterprise AI architecture.</p>
-    <div class="actions"><a class="btn primary" href="mailto:anjeyasahu26@gmail.com">Email me</a><a class="btn secondary" href="https://github.com/Anjaneya-Github" target="_blank">GitHub</a><a class="btn secondary" href="https://www.linkedin.com/in/anjaneya-sahu-79074889/" target="_blank">LinkedIn</a></div>
+    <div class="actions"><a class="btn primary" href="mailto:anjaneyasahu26@gmail.com">Email me</a><a class="btn secondary" href="https://github.com/Anjaneya-Github" target="_blank">GitHub</a><a class="btn secondary" href="https://www.linkedin.com/in/anjaneya-sahu-79074889/" target="_blank">LinkedIn</a></div>
   </div>
 </section>
